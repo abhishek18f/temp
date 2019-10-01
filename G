@@ -27,3 +27,5 @@ print(theta)
 plt.savefig("Gradient Descent Hypothesis")
 plt.show()
 
+//changed
+
