@@ -1,0 +1,17 @@
+<launch>
+<!--<node pkg="arle_controller" type="diff_tf.py" name="diff_tf" />-->
+
+<node pkg="arle_controller" type="twist_to_motors.py" name="twist_to_motors" />
+
+<!--<node pkg="arle_controller" type="motor.py" name="motor" output="screen"/>-->
+
+<node pkg="arle_controller" type="laser_to_baselink.py" name="laser_to_baselink" />
+
+<node pkg="arle_controller" type="foottolink.py" name="foottolink" />
+<!--<node pkg="arle_controller" type="map_odom.py" name="map_odom" />-->
+<node pkg="arle_controller" type="imutobase.py" name="imutobase" />
+<node pkg="arle_controller" type="lpid.py" name="lpid" />
+<node pkg="arle_controller" type="basefootprint_to_odom.py" name="basefootprint_to_odom" />
+
+<node pkg="arle_controller" type="rpid.py" name="rpid" />
+</launch>
